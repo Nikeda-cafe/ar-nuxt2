@@ -3,7 +3,7 @@
     <div>
       <logo />
       <h1 class="title">
-        my-nuxt-app
+        ar-nuxt2
       </h1>
       <h2 class="subtitle">
         My well-made Nuxt.js project

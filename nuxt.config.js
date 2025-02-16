@@ -1,6 +1,11 @@
 
 export default {
-  mode: 'universal',
+  ssr: true,  // SSR を有効にする
+  target: 'server',  // サーバーサイドレンダリングモードを設定
+  server: {
+    port: 3000,   // App Runner がリッスンするポート番号
+    host: '0.0.0.0',  // どこからでもアクセスできるように設定
+  },
   /*
   ** Headers of the page
   */
@@ -59,6 +64,7 @@ export default {
     ** You can extend webpack config here
     */
     extend (config, ctx) {
-    }
+    },
+    transpile: ['bootstrap-vue/src/icons/icons.js'],
   },
 }
